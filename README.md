@@ -27,3 +27,11 @@ python lambda_scan_standalone.py \
        --lambda1_lo 0.2  --lambda1_hi 2 \
        --lambda2_lo 0.2  --lambda2_hi 2 \
        --N 30 --nproc 8   > scan.csv
+
+---
+
+## Citation
+
+    Adler, Y. et al. “Continuous Regimes of Wound Healing and Fibrosis.”
+    iScience 23 (2020) 100841.
+    DOI: 10.1016/j.isci.2020.100841
