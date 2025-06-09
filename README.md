@@ -1,5 +1,5 @@
 # Hot-Fibrosis Fixed-Point Scan  
-_Reproduction & extension of Adler et al. (2020) wound-healing circuit_
+_Extension of Adler et al. (2020) wound-healing circuit_
 
 This repository contains **one self-contained script**  
 `lambda_scan_standalone.py`  
@@ -27,7 +27,7 @@ python lambda_scan_standalone.py \
        --lambda1_lo 0.2  --lambda1_hi 2 \
        --lambda2_lo 0.2  --lambda2_hi 2 \
        --N 30 --nproc 8   > scan.csv
-
+```
 ---
 
 ## Citation
