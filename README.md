@@ -16,15 +16,6 @@ heat-map:
 
 ---
 
-## Why this matters
-
-* **Directly relevant** to the Adler Lab’s work on multistability and fibrosis.
-* **Reproducible** – you can clone, install, run, and get the same figure & CSV in <30 s.
-* **Transparent numerics** – analytic Jacobian, Newton polishing, and a barycentric
-  seed-selection routine remain exactly as in the original code.
-
----
-
 ## Quick start
 
 ```bash
