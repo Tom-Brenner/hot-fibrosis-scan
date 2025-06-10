@@ -99,7 +99,7 @@ pip install -r requirements.txt      # numpy scipy matplotlib
 python lambda_scan_standalone.py \
        --lambda1_lo 0.2  --lambda1_hi 2 \
        --lambda2_lo 0.2  --lambda2_hi 2 \
-       --N 30 --nproc 8  
+       --N 30 --nproc 8 --fig_name my_hot_plot.png 
 
 ```
 ---

@@ -319,6 +319,7 @@ def main() -> None:
     pa.add_argument("--lambda1_hi", type=float, default=2.0)
     pa.add_argument("--lambda2_lo", type=float, default=0.05)
     pa.add_argument("--lambda2_hi", type=float, default=2.0)
+    pa.add_argument("--fig_name", type=str, default='hot.png')
     pa.add_argument("--N", type=int, default=20,   help="grid points per axis")
     pa.add_argument("--nproc", type=int, default=0, help="processes (0→serial)")
     args = pa.parse_args()
@@ -337,12 +338,12 @@ def main() -> None:
     writer = csv.writer(sys.stdout)
     writer.writerow([
         "lambda1", "lambda2",
-        "eig_heal", "M_heal", "F_heal",
-        "eig_cold", "M_cold", "F_cold",
-        "eig_hot", "M_hot", "F_hot"
+        "M_heal", "F_heal",
+        "M_cold", "F_cold",
+        "M_hot", "F_hot"
     ])
     writer.writerows(map(format_row, rows))
-    plot_heat(rows, "hot", "heat map: F*, contour lines: M*", "Hot_f_2.png")
+    plot_heat(rows, "hot", "heat map: F*, contour lines: M*", args.fig_name)
 if __name__ == "__main__":
     main()
 
