@@ -28,14 +28,15 @@ The script implements the **full four-variable ODE system** from Adler et al. (2
 
 The system is:
 
-\[
+```math
 \begin{aligned}
 \frac{dF}{dt} &= \left( \lambda_1 \frac{P}{k_1 + P} \left(1 - \frac{F}{K}\right) - \mu_1 \right) F \\
 \frac{dM}{dt} &= \left( \lambda_2 \frac{C}{k_2 + C} - \mu_2 \right) M \\
 \frac{dP}{dt} &= \beta_2 M + \beta_3 F - \alpha_2 F \frac{P}{k_1 + P} - \gamma P \\
 \frac{dC}{dt} &= \beta_1 F - \alpha_1 M \frac{C}{k_2 + C} - \gamma C
 \end{aligned}
-\]
+```
+
 
 ### Term definitions
 
@@ -67,13 +68,14 @@ As discussed in *Adler et al. (2020)*, persistent inflammation can tip tissue re
 The script scans across ranges of **λ₁** and **λ₂**, and for each pair:
 
 1. **Identifies candidate fixed points** using a fast method based on detecting sign changes in the reduced 2D system:
-   \[
-   \phi_F(F,M) = 0, \quad \phi_M(F,M) = 0
-   \]
-   where **P** and **C** are set via quasi-steady-state approximations (QSSA):
-   \[
-   P = P_\text{qss}(F,M), \quad C = C_\text{qss}(F,M)
-   \]
+   ```math
+\phi_F(F, M) = 0, \quad \phi_M(F, M) = 0
+```
+
+```math
+P = P_{\text{qss}}(F, M), \quad C = C_{\text{qss}}(F, M)
+```
+
 
 2. **Refines these seeds** via Newton-Raphson (`newton_polish`) on the full four-variable system.
 
