@@ -84,7 +84,7 @@ P = P_{\text{qss}}(F, M), \quad C = C_{\text{qss}}(F, M)
    - Cold fibrosis (high F, zero M)
    - Hot fibrosis (highest F and M)
 
-4. **Exports** the hot-fibrosis values **(F\*, M\*)** as a CSV table and optionally generates a heatmap.
+4. **Generates** a heatmap and optionally **Exports** the hot-fibrosis values **(F\*, M\*)** as a CSV table (use > to a csv file). 
 
 ---
 
