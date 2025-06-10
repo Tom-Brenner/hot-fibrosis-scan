@@ -69,7 +69,7 @@ The script scans across ranges of **λ₁** and **λ₂**, and for each pair:
 
 1. **Identifies candidate fixed points** using a fast method based on detecting sign changes in the reduced 2D system:
 ```math
-\phi_F(F, M) = 0, \quad \phi_M(F, M) = 0
+\phi_F(F, M) = 0, \quad \phi_M(F, M) = 0 \\
 
 P = P_{\text{qss}}(F, M), \quad C = C_{\text{qss}}(F, M)
 ```
